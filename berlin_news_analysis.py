@@ -32,20 +32,20 @@ def plot_trending(tags_n_freq, fig_title):
     ### plot x, y
     tag_labels = [tag for tag, _ in tags_n_freq]
     x = np.array(range(20))
-    plt.xticks(x, tag_labels, rotation=45, ha='right')
     y = [freq for _, freq in tags_n_freq]
+    
+    plt.xticks(x, tag_labels, rotation=45, ha='right')
 
-    plt.bar(np.array(range(20)), y, color='green', alpha=0.6, align='center')
+    plt.bar(x, y, color='blue', alpha=0.6, align='center')
     plt.ylabel('Frequency')
     plt.title(fig_title)
-    
     plt.tight_layout() ### to make room for labels
-    fig = plt.gcf()
-
+    
     ### save fig
     if not os.path.exists('fig'):
         os.makedirs('fig')
     else: pass
+    fig = plt.gcf()
     fig.savefig('fig/{}'.format(re.sub(' ', '_', fig_title)))
     plt.close(fig)
 
