@@ -6,7 +6,7 @@ Top 20 related tags about Berlin from 2006 to 2016
 
 The [data](https://github.com/letitbevi/berlin-news-analysis/tree/master/data) folder contains 11 JSON files that were scraped from [The Guardian](https://www.theguardian.com/):
 
-| File Name        | Num of Documents  |  Num of sentences that mentioned `Berlin` |
+| File Name        | Num of Documents  |  Num of sentences that contain `Berlin` |
 | ------------- |:-------------:|:-----:|
 |2006_Berlin_news.json|1455|2327|
 |2007_Berlin_news.json|1563|2446|
@@ -19,7 +19,7 @@ The [data](https://github.com/letitbevi/berlin-news-analysis/tree/master/data) f
 |2014_Berlin_news.json|1717|2944|
 |2015_Berlin_news.json|1951|3548|
 |2016_Berlin_news.json|1587|2704|
-|Total|17348|
+|Total|17348|28610|
 
 Note: Data in the file `2016_Berlin_news.json` were collected from 2016-01-01 to 2016-11-08
 
